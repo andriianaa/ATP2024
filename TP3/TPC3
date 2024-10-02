@@ -1,0 +1,50 @@
+def menu():
+    print("Menu")
+    print("1) Eu começo o jogo!")
+    print("2) O computador começa o jogo!")
+
+menu()
+opcao=input("Selecione o modo de jogo desejado:")
+fosforos=21
+
+if opcao=="1":
+    while fosforos>1:
+        print(f"Restam {fosforos} fósforos")
+        n=int(input("Escolha o número de fósforos que deseja retirar (1 a 4):"))
+        while n<1 or n>4 or n>fosforos:
+            n=int(input("Número inválido! Escolha o número de fósforos que deseja retirar (1 a 4):"))
+
+        fosforos=fosforos-n  
+        print(f"Retirou {n} fósforos. Restam {fosforos} fósforos")
+        
+        if fosforos==1:
+            print("Ganhou! O computador acabou de retirar o último fósforo") 
+        else:
+            computador= (fosforos-1)%5
+            if computador==0:
+                computador=1
+            fosforos=fosforos-computador
+            print(f"O computador retirou {computador} fósforos.")
+            if fosforos==1:
+                print("Perdeu! Acabou de retirar o último fósforo..")
+
+if opcao=="2":
+    while fosforos>1:
+        computador= (fosforos-1)%5
+        if computador==0 or computador>4:
+                computador=1
+        fosforos=fosforos-computador
+        print(f"O computador retirou {computador} fósforos.")
+        if fosforos==1:
+                print("Perdeu! Acabou de retirar o último fósforo..")
+        
+        
+        n=int(input("Escolha o número de fósforos que deseja retirar (1 a 4):"))
+        while n<1 or n>4 or n>fosforos:
+            n=int(input("Número inválido! Escolha o número de fósforos que deseja retirar (1 a 4):"))
+
+        fosforos=fosforos-n  
+        print(f"Retirou {n} fósforos. Restam {fosforos} fósforos")
+        
+        if fosforos==1:
+            print("Ganhou! O computador acabou de retirar o último fósforo") 

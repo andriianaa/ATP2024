@@ -11,7 +11,6 @@ def menu():
     print("(0)-Sair")
     return
 
-# TabMeteo = [(Data,TempMin,TempMax,Precipitacao)]
 tabMeteo1 = [((2022,1,20), 2, 16, 0),((2022,1,21), 1, 13, 0.2), ((2022,1,22), 7, 17, 0.01)]
 
 def medias(tabMeteo):

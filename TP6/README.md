@@ -1,5 +1,5 @@
 # Relatório da TP6
-## Data: 2024-10-22
+## Data: 2024-11-12
 ## Autor: Andriana Smoliy
 ## Resumo: 
 O tpc6 consistiu na realização de uma aplicação para gerir uma turma. A aplicação coloca no monitor o seguinte menu de operações:
